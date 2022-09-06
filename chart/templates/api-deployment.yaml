@@ -52,16 +52,6 @@ spec:
                 secretKeyRef:
                   name: pipem-secret
                   key: COOKIE_SECRET
-            - name: 'USERNAME'
-              valueFrom:
-                secretKeyRef:
-                  name: pipem-secret
-                  key: USERNAME
-            - name: 'PASSWORD'
-              valueFrom:
-                secretKeyRef:
-                  name: pipem-secret
-                  key: PASSWORD
             - name: 'MONGODB_URI'
               valueFrom:
                 secretKeyRef:
