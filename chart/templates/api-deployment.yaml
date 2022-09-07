@@ -15,7 +15,7 @@ spec:
       labels:
         component: api
     spec:
-      serviceAccountName: pipem-api-sa
+      serviceAccountName: pipem-sa
       containers:
         - name: api
           image: {{ .Values.image }}:{{ .Values.version }}
